@@ -12,7 +12,7 @@ The following is necessary in order to build and deploy this example.
 - Python 3.9 or above
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 - [AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html)
-- [Docker](https://www.docker.com/products/docker-desktop/) or [OrbStack](https://orbstack.dev/) (Because docker build runs from the CDK, Docker or OrbStack must be pre-installed on your build system.)
+- [Docker](https://www.docker.com/products/docker-desktop/) or [OrbStack](https://orbstack.dev/) (Because docker build runs from the CDK, Docker or OrbStack must be pre-installed on your build system)
 
 
 ## AWS Services
@@ -34,7 +34,7 @@ The following AWS services are used to run this example.
 cd bedrock-demo-running-on-ecs
 ```
 
-2. Setting AWS_PROFILE
+2. Set AWS_PROFILE
 
 ```shell
 export AWS_PROFILE=<the configuration profile for aws-cli>
