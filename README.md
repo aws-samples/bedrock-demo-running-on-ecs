@@ -19,12 +19,17 @@ The following is necessary in order to build and deploy this example.
 
 The following AWS services are used to run this example.
 
-- **Application Load Balancer (ALB)** Routing incoming traffic from outside to ECS
+- **Application Load Balancer (ALB)** routing incoming traffic from outside to ECS
 - **Elastic Container Registry (Amazon ECR)** storage for container image
 - **Elastic Container Service (Amazon ECS)** container orchestration service
 - **Amazon Bedrock** service that makes it easy to use foundation models
 - **AWS CodePipeline** continuous delivery service
 - **AWS CodeBuild** build service that compiles source code
+
+
+## Sample Applications
+
+- **Simple Q&A** answer questions with what the model has learned.
 
 
 ## Deployment Instructions

@@ -13,7 +13,7 @@ API_URL = f'{API_ENDPOINT}/api/prompt'
 
 
 st.set_page_config(
-    page_title='Gen AI - Text'
+    page_title='GenAI Demo'
 )
 
 st.title('무엇이든 물어보세요.')

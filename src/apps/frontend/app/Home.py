@@ -6,10 +6,10 @@
 import streamlit as st 
 
 st.set_page_config(
-    page_title='AWS Gen AI'
+    page_title='GenAI Demo'
 )
 
-st.markdown(f'# AWS Gen AI <span style=color:#2E9BF5><font size=5>Demo</font></span>', unsafe_allow_html=True)
+st.markdown(f'# GenAI Demo')
 
 # st.markdown('\n')
 
