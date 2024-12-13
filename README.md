@@ -34,31 +34,34 @@ The following AWS services are used to run this example.
 
 ## Deployment Instructions
 
-1. Step into the project folder
-```
+1. Enable model in Amazon Bedrcok
+Go to [Amazon Bedrock console](https://ap-northeast-2.console.aws.amazon.com/bedrock/), On the left sidebar, select Model access, then enable Claude 3.5 Sonnet.
+
+2. Step into the project folder
+```shell
 cd bedrock-demo-running-on-ecs
 ```
 
-2. Set AWS_PROFILE
+3. Set AWS_PROFILE
 
 ```shell
 export AWS_PROFILE=<the configuration profile for aws-cli>
 ```
 
-3. Create virtualenv
+4. Create virtualenv
 
 ```shell
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-4. Install requirements
+5. Install requirements
 
 ```shell
 pip install -r requirements.txt
 ```
 
-5. Deploy stack using CDK
+6. Deploy stack using CDK
 
 Make sure Docker or OrbStack is running on the local machine 
 

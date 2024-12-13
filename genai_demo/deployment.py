@@ -34,7 +34,8 @@ class GenAIDemo(Stack):
             self,
             'Containers',
             vpc=networking.vpc
-        )  
+        )
+        ecs.node.add_dependency(networking)
 
         ##########################################################
         # Client and Server Mode
@@ -47,7 +48,6 @@ class GenAIDemo(Stack):
             build_image_def_log_group=ecs.build_image_def_log_group,
             sg=networking.backend_sg
         )   
-        backend_app.node.add_dependency(ecs)
 
         ##########################################################
         # Client Mode
@@ -61,6 +61,3 @@ class GenAIDemo(Stack):
             build_image_def_log_group=ecs.build_image_def_log_group,
             sg=networking.frontend_sg
         )
-        frontend_app.node.add_dependency(backend_app)
-
-
